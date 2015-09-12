@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/scroll_view_content"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="0dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white_1000"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="2dp"
+                    card_view:cardUseCompatPadding="false"
+                    card_view:contentPadding="0dp"
+                    android:layout_margin="0dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="12dp"
+                            android:textAppearance="@style/TextAppearance.Bold"
+                            android:text="جزئیات سفارش"
+                            android:textColor="@color/secondary_text"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#ccc" />
+
+                        <LinearLayout
+                            android:weightSum="9"
+                            android:paddingBottom="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:weightSum="2"
+                                android:layout_weight="2"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="پرداخت"
+                                    android:textSize="12sp"
+                                    android:textAppearance="@style/TextAppearance.Bold"
+                                    android:textColor="#ffb1b4b7"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:maxLines="1" />
+
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:id="@+id/order_payment"
+                                    android:text="الکترونیکی"
+                                    android:textSize="14sp"
+                                    android:textColor="#ff343943"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:maxLines="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:weightSum="2"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="تاریخ"
+                                    android:textSize="12sp"
+                                    android:textAppearance="@style/TextAppearance.Bold"
+                                    android:textColor="#ffb1b4b7"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:maxLines="1" />
+
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:id="@+id/order_date"
+                                    android:text="2 مرداد 94 ساعت 14:45"
+                                    android:textSize="14sp"
+                                    android:textColor="#ff343943"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:maxLines="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:weightSum="2"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="وضعیت"
+                                    android:textSize="12sp"
+                                    android:textAppearance="@style/TextAppearance.Bold"
+                                    android:textColor="#ffb1b4b7"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:maxLines="1" />
+
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:id="@+id/order_status"
+                                    android:text="تکمیل شده"
+                                    android:textSize="14sp"
+                                    android:textColor="#ff343943"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:maxLines="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/cart_item_quantity_layout"
+                                android:orientation="vertical"
+                                android:layout_alignParentRight="true"
+                                android:weightSum="2"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="شماره"
+                                    android:textSize="12sp"
+                                    android:textAppearance="@style/TextAppearance.Bold"
+                                    android:textColor="#ffb1b4b7"
+                                    android:ellipsize="end"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:maxLines="1"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:id="@+id/order_count"
+                                    android:text="2341"
+                                    android:textSize="14sp"
+                                    android:textColor="#ff343943"
+                                    android:gravity="right|center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:maxLines="1"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white_1000"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="2dp"
+                    card_view:cardUseCompatPadding="false"
+                    card_view:contentPadding="0dp"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="12dp"
+                            android:textAppearance="@style/TextAppearance.Bold"
+                            android:text="سفارشات"
+                            android:textColor="@color/secondary_text"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#ccc" />
+
+                        <com.example.shopping.app.ui.widget.ExpandableHeightListView
+                            android:visibility="visible"
+                            android:id="@+id/items"
+                            android:dividerHeight="0dp"
+                            android:divider="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--
+
+                 <View
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:id="@+id/add_coupon_layout"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_add" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="کوپن تخفیف"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_grey_800"
+                        android:maxLines="1"
+                        android:textAppearance="@style/TextAppearance.Bold"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                 -->
+
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white_1000"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="2dp"
+                    card_view:cardUseCompatPadding="false"
+                    card_view:contentPadding="0dp"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="12dp"
+                            android:textAppearance="@style/TextAppearance.Bold"
+                            android:text="آدرس تحویل"
+                            android:textColor="@color/secondary_text"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:id="@+id/shipping_address_line"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#ccc" />
+
+                        <RelativeLayout
+                            android:paddingBottom="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_name_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="تحویل گیرنده"
+                                android:layout_alignParentRight="true" />
+
+                            <TextView
+                                android:text="xxxx xxxxxxxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_toLeftOf="@+id/order_name_title" />
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/province_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="استان"
+                                android:layout_below="@+id/order_name_title"
+                                android:layout_alignParentRight="true" />
+
+                            <TextView
+                                android:text="xxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_province"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_below="@+id/order_name_title"
+                                android:layout_toLeftOf="@+id/province_title" />
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/city_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="شهر"
+                                android:layout_below="@+id/order_name_title"
+                                android:layout_toLeftOf="@+id/order_province" />
+
+                            <TextView
+                                android:text="xxxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_below="@+id/order_name_title"
+                                android:layout_toLeftOf="@+id/city_title" />
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_delivery_address_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="آدرس"
+                                android:layout_below="@+id/city_title"
+                                android:layout_alignParentRight="true" />
+
+                            <TextView
+                                android:text="xxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:layout_below="@+id/city_title"
+                                android:layout_toLeftOf="@+id/order_delivery_address_title" />
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/postalCode_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="کدپستی"
+                                android:layout_below="@+id/order_address"
+                                android:layout_alignParentRight="true" />
+
+                            <TextView
+                                android:text="xxxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_postalCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_toLeftOf="@+id/postalCode_title"
+                                android:layout_below="@+id/order_address" />
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/emergencyPhone_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="شماره تماس اضطراری"
+                                android:layout_below="@+id/postalCode_title"
+                                android:layout_alignParentRight="true" />
+
+                            <TextView
+                                android:text="xxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_emergencyPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_toLeftOf="@+id/emergencyPhone_title"
+                                android:layout_below="@+id/postalCode_title" />
+
+                            <TextView
+                                android:textSize="14.0sp"
+                                android:textColor="@color/secondary_text"
+                                android:gravity="right"
+                                android:id="@+id/phone_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="16.0dip"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="شماره تماس ثابت"
+                                android:layout_below="@+id/emergencyPhone_title"
+                                android:layout_alignParentRight="true" />
+
+                            <TextView
+                                android:text="xxx"
+                                android:textSize="14.0sp"
+                                android:textColor="@color/primary_text"
+                                android:gravity="right"
+                                android:id="@+id/order_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16.0dip"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_toLeftOf="@+id/phone_title"
+                                android:layout_below="@+id/emergencyPhone_title" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white_1000"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="2dp"
+                    card_view:cardUseCompatPadding="false"
+                    card_view:contentPadding="0dp"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:paddingBottom="4dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="12dp"
+                            android:textAppearance="@style/TextAppearance.Bold"
+                            android:text="صورتحساب"
+                            android:textColor="@color/secondary_text"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#ccc" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="@color/md_grey_100"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="14sp"
+                                    android:text="هزینه محصولات"
+                                    android:textColor="@color/secondary_text"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/order_subtotal_price"
+                                    android:textSize="14sp"
+                                    android:text="0 تومان"
+                                    android:textColor="@color/secondary_text"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/order_discount_layout"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="14sp"
+                                    android:text="تخفیف"
+                                    android:textColor="@color/md_red_800"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/order_discount_price"
+                                    android:textSize="14sp"
+                                    android:text="0 تومان"
+                                    android:textColor="@color/md_red_800"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="14sp"
+                                    android:text="هزینه حمل و نقل"
+                                    android:textColor="@color/secondary_text"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/order_shipping_price"
+                                    android:textSize="14sp"
+                                    android:text="0 تومان"
+                                    android:textColor="@color/secondary_text"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingBottom="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="14sp"
+                                    android:text="مالیات"
+                                    android:textColor="@color/secondary_text"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/order_tax_price"
+                                    android:textSize="14sp"
+                                    android:text="0 تومان"
+                                    android:textColor="@color/secondary_text"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#ccc" />
+
+                            <RelativeLayout
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="12dp"
+                                android:paddingBottom="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textAppearance="@style/TextAppearance.Bold"
+                                    android:text="هزینه کل سفارش"
+                                    android:textColor="@color/primary_text"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/order_total_price"
+                                    android:textSize="16sp"
+                                    android:textAppearance="@style/TextAppearance.Bold"
+                                    android:text="0 تومان"
+                                    android:textColor="@color/primary_text"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Loading progress -->
+        <ProgressBar android:id="@+id/load_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/load_error_layout"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/load_error_icon"
+                android:visibility="visible"
+                android:src="@mipmap/ic_sync_problem"
+                android:layout_width="56dp"
+                android:layout_height="56dp" />
+
+            <TextView
+                android:id="@+id/load_error_desc"
+                android:padding="8dp"
+                android:visibility="visible"
+                android:gravity="center_horizontal"
+                android:text="@string/network_error"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:textColor="@color/secondary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/load_error_detail_desc"
+                android:padding="8dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:textColor="@color/secondary_text"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button android:id="@+id/load_retry_button"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:text="@string/button_retry"
+                android:padding="0dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/md_white_1000"
+                android:background="@color/md_grey_500"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

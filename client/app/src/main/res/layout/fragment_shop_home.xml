@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/scroll_view_content"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/first_banner_layout"
+                android:layout_margin="8dp"
+                layout="@layout/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/special_offer_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:gravity="center_vertical|right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/special_offer_title"
+                    android:layout_toRightOf="@+id/special_offer_more_button"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:textColor="@color/secondary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/special_offer_more_button"
+                    android:text="@string/more_text"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@color/md_grey_500"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/special_offer_list"
+                android:rotationY="180"
+                android:layout_width="match_parent"
+                android:layout_height="244.0dp" />
+
+            <include
+                android:id="@+id/second_banner_layout"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                layout="@layout/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/most_sales_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/most_sales_title"
+                    android:layout_toRightOf="@+id/most_sales_more_button"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:textColor="@color/secondary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/most_sales_more_button"
+                    android:text="@string/more_text"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@color/md_grey_500"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/most_sales_list"
+                android:rotationY="180"
+                android:layout_width="match_parent"
+                android:layout_height="244.0dp" />
+
+            <RelativeLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/recent_collection_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/recent_collection_tiltle"
+                    android:layout_toRightOf="@+id/recent_collection_more_button"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:textColor="@color/secondary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/recent_collection_more_button"
+                    android:text="@string/more_text"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@color/md_grey_500"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/recent_collection_item"
+                android:layout_margin="8dp"
+                layout="@layout/item_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

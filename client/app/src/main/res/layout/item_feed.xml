@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_feed_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="0dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="246.66dp">
+
+            <ImageView
+                android:background="@color/md_grey_200"
+                android:id="@+id/item_feed_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/item_feed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="2dp"
+            android:text="@string/dummy_text_title"
+            android:gravity="right"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_feed_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text_description_long"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:gravity="right"
+            android:textColor="@color/md_grey_800"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:maxLines="3" />
+
+        <RelativeLayout
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/item_feed_datetime_title"
+                android:text="@string/datetime"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/md_grey_600"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/item_feed_datetime_content"
+                android:text="@string/dummy_text_datetime"
+                android:layout_toLeftOf="@+id/item_feed_datetime_title"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:textColor="@color/md_grey_600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/item_feed_comments_layout"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/empty_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/item_feed_comments"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:padding="0dp"
+                    android:textColor="@color/md_grey_600"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_comment"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:padding="0dp"
+                    android:layout_gravity="center"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:id="@+id/banner_more_layout"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@color/md_white_1000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/banner_more"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_arrow_left_grey" />
+
+            <TextView
+                android:id="@+id/banner_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/more_feed"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

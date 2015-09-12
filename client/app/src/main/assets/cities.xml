@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<country name="ایران">
+	<state name="آذربایجان شرقی">
+		<city>آذرشهر</city>
+		<city>اسکو</city>
+		<city>اهر</city>
+		<city>بستان آباد</city>
+		<city>بناب</city>
+		<city>تبریز</city>
+		<city>جلفا</city>
+		<city>خداآفرین</city>
+		<city>سراب</city>
+		<city>شبستر</city>
+		<city>عجب شیر</city>
+		<city>مراغه</city>
+		<city>مرند</city>
+		<city>ملکان</city>
+		<city>میانه</city>
+		<city>هریس</city>
+		<city>هشترود</city>
+		<city>هوراند</city>
+		<city>ورزقان</city>
+		<city>چارایماق</city>
+		<city>کلیبر</city>
+	</state>
+	<state name="آذربایجان غربی">
+		<city>ارومیه</city>
+		<city>اشنویه</city>
+		<city>بوکان</city>
+		<city>تکاب</city>
+		<city>خوی</city>
+		<city>سردشت</city>
+		<city>شاهین دژ</city>
+		<city>شوط</city>
+		<city>ماکو</city>
+		<city>مهاباد</city>
+		<city>میاندواب</city>
+		<city>نقده</city>
+		<city>پیرانشهر</city>
+		<city>چالدران</city>
+		<city>چایپاره</city>
+	</state>
+	<state name="اردبیل">
+		<city>اردبیل</city>
+		<city>بیله سوار</city>
+		<city>خلخال</city>
+		<city>سرعین</city>
+		<city>مشگین شهر</city>
+		<city>نمین</city>
+		<city>نیر</city>
+		<city>پارس آباد</city>
+		<city>کوثر</city>
+		<city>گرمی</city>
+	</state>
+	<state name="اصفهان">
+		<city>آران و بیدگل</city>
+		<city>اردستان</city>
+		<city>اصفهان</city>
+		<city>برخوار</city>
+		<city>بویین و میاندشت</city>
+		<city>تیران و کرون</city>
+		<city>خمینی شهر</city>
+		<city>خوانسار</city>
+		<city>خور و بیابانک</city>
+		<city>دهاقان</city>
+		<city>سمیرم</city>
+		<city>شاهینشهر و میمه</city>
+		<city>شهرضا</city>
+		<city>فریدن</city>
+		<city>فریدون شهر</city>
+		<city>فلاورجان</city>
+		<city>لنجان</city>
+		<city>مبارکه</city>
+		<city>نایین</city>
+		<city>نجف آباد</city>
+		<city>نطنز</city>
+		<city>چادگان</city>
+		<city>کاشان</city>
+		<city>گلپایگان</city>
+	</state>
+	<state name="البرز">
+		<city>البرز</city>
+	</state>
+	<state name="ایلام">
+		<city>آبدانان</city>
+		<city>ایلام</city>
+		<city>ایوان</city>
+		<city>دره شهر</city>
+		<city>دهلران</city>
+		<city>شیروان</city>
+		<city>ملکشاهی</city>
+		<city>مهران</city>
+	</state>
+	<state name="بوشهر">
+		<city>بوشهر</city>
+		<city>تنگستان</city>
+		<city>جم</city>
+		<city>دشتستان</city>
+		<city>دشتی</city>
+		<city>دیر</city>
+		<city>دیلم</city>
+		<city>عسلویه</city>
+		<city>کنگان</city>
+		<city>گناوه</city>
+	</state>
+	<state name="تهران">
+		<city>اسلام شهر</city>
+		<city>تجریش</city>
+		<city>تهران</city>
+		<city>دماوند</city>
+		<city>رباط کریم</city>
+		<city>شهر ری</city>
+		<city>شهریار</city>
+		<city>فیروزکوه</city>
+		<city>قدس</city>
+		<city>ملارد</city>
+		<city>ورامین</city>
+		<city>پاکدشت</city>
+	</state>
+	<state name="خراسان جنوبی">
+		<city>بشرویه</city>
+		<city>بیرجند</city>
+		<city>خوسف</city>
+		<city>درمیان</city>
+		<city>زیرکوه</city>
+		<city>سرایان</city>
+		<city>سربیشه</city>
+		<city>طبس</city>
+		<city>فردوس</city>
+		<city>قاینات</city>
+		<city>نهبندان</city>
+	</state>
+	<state name="خراسان رضوی">
+		<city>باخرز</city>
+		<city>بجستان</city>
+		<city>بردسکن</city>
+		<city>تایباد</city>
+		<city>تربت جام</city>
+		<city>تربت حیدریه</city>
+		<city>جغتای</city>
+		<city>جوین</city>
+		<city>خلیل آباد</city>
+		<city>خواف</city>
+		<city>درگز</city>
+		<city>زاوه</city>
+		<city>سبزوار</city>
+		<city>سرخس</city>
+		<city>شاندیز</city>
+		<city>طرقبه</city>
+		<city>فریمان</city>
+		<city>قوچان</city>
+		<city>مشهد</city>
+		<city>مه ولاد</city>
+		<city>نیشابور</city>
+		<city>چناران</city>
+		<city>کاشمر</city>
+		<city>کلات</city>
+		<city>گناباد</city>
+	</state>
+	<state name="خراسان شمالی">
+		<city>اسفراین</city>
+		<city>بجنورد</city>
+		<city>جاجرم</city>
+		<city>فاروج</city>
+		<city>مانه و سملقان</city>
+	</state>
+	<state name="خوزستان">
+		<city>آبادان</city>
+		<city>آغاجاری</city>
+		<city>امیدیه</city>
+		<city>اندیمشک</city>
+		<city>اندیکا</city>
+		<city>اهواز</city>
+		<city>ایذه</city>
+		<city>باغ ملک</city>
+		<city>باوی</city>
+		<city>بهبهان</city>
+		<city>خرمشهر</city>
+		<city>دزفول</city>
+		<city>دشت آزادگان</city>
+		<city>رامشیر</city>
+		<city>رامهرمز</city>
+		<city>شادگان</city>
+		<city>شوش</city>
+		<city>شوشتر</city>
+		<city>لالی</city>
+		<city>ماهشهر</city>
+		<city>مسجد سلیمان</city>
+		<city>هفت گل</city>
+		<city>هندیجان</city>
+		<city>هویزه</city>
+		<city>گتوند</city>
+	</state>
+	<state name="زنجان">
+		<city>ابهر</city>
+		<city>ایجرود</city>
+		<city>خدابنده</city>
+		<city>خرمدره</city>
+		<city>زنجان</city>
+		<city>سلطانیه</city>
+		<city>طارم</city>
+		<city>ماه نشان</city>
+	</state>
+	<state name="سمنان">
+		<city>آرادان</city>
+		<city>دامغان</city>
+		<city>سرخه</city>
+		<city>سمنان</city>
+		<city>شاهرود</city>
+		<city>مهدی شهر</city>
+		<city>میامی</city>
+		<city>گرمسار</city>
+	</state>
+	<state name="سیستان و بلوچستان">
+		<city>ایرانشهر</city>
+		<city>بمپور</city>
+		<city>خاش</city>
+		<city>دلگان</city>
+		<city>زابل</city>
+		<city>زاهدان</city>
+		<city>زهک</city>
+		<city>سراوان</city>
+		<city>سرباز</city>
+		<city>سیب و سوران</city>
+		<city>قصرقند</city>
+		<city>مهرستان</city>
+		<city>میرجاوه</city>
+		<city>نیم روز</city>
+		<city>نیک شهر</city>
+		<city>هامون</city>
+		<city>هیرمند</city>
+		<city>چاه بهار</city>
+		<city>کنارک</city>
+	</state>
+	<state name="فارس">
+		<city>آباده</city>
+		<city>ارسنجان</city>
+		<city>استهبان</city>
+		<city>اقلید</city>
+		<city>بوانات</city>
+		<city>جهرم</city>
+		<city>خرم بید</city>
+		<city>خنج</city>
+		<city>داراب</city>
+		<city>رستم</city>
+		<city>زرین دشت</city>
+		<city>سروستان</city>
+		<city>سپیدان</city>
+		<city>شیراز</city>
+		<city>فراشبند</city>
+		<city>فسا</city>
+		<city>فیروزآباد</city>
+		<city>قیر</city>
+		<city>لارستان</city>
+		<city>لامرد</city>
+		<city>مرودشت</city>
+		<city>ممسنی</city>
+		<city>مهر</city>
+		<city>نی ریز</city>
+		<city>پاسارگاد</city>
+		<city>کازرون</city>
+		<city>کوار</city>
+		<city>گراش</city>
+	</state>
+	<state name="قزوین">
+		<city>آبیک</city>
+		<city>آوج</city>
+		<city>بویین زهرا</city>
+		<city>تاکستان</city>
+		<city>قزوین</city>
+	</state>
+	<state name="قم">
+		<city>قم</city>
+	</state>
+	<state name="لرستان">
+		<city>ازنا</city>
+		<city>الیگودرز</city>
+		<city>بروجرد</city>
+		<city>خرم آباد</city>
+		<city>دلفان</city>
+		<city>دوره</city>
+		<city>دورود</city>
+		<city>رومشگان</city>
+		<city>سلسله</city>
+		<city>پل دختر</city>
+		<city>کوهدشت</city>
+	</state>
+	<state name="مازندران">
+		<city>آمل</city>
+		<city>بابل</city>
+		<city>بابلسر</city>
+		<city>بهشهر</city>
+		<city>تنکابن</city>
+		<city>جویبار</city>
+		<city>رامسر</city>
+		<city>ساری</city>
+		<city>سوادکوه</city>
+		<city>سیمرغ</city>
+		<city>عباس آباد</city>
+		<city>فریدون کنار</city>
+		<city>قایم شهر</city>
+		<city>محمود آباد</city>
+		<city>میان دو رود</city>
+		<city>نور</city>
+		<city>نوشهر</city>
+		<city>نکا</city>
+		<city>چالوس</city>
+		<city>گلوگاه</city>
+	</state>
+	<state name="مرکزی">
+		<city>آشتیان</city>
+		<city>تفرش</city>
+		<city>خمین</city>
+		<city>خنداب</city>
+		<city>دلیجان</city>
+		<city>زرندیه</city>
+		<city>ساوه</city>
+		<city>شازند</city>
+		<city>فراهان</city>
+		<city>محلات</city>
+		<city>مرکزی</city>
+		<city>کمیجان</city>
+	</state>
+	<state name="هرمزگان">
+		<city>ابوموسی</city>
+		<city>بستک</city>
+		<city>بشاگرد</city>
+		<city>بندر لنگه</city>
+		<city>بندرعباس</city>
+		<city>جاسک</city>
+		<city>حاجی آباد</city>
+		<city>خمیر</city>
+		<city>رودان</city>
+		<city>سیریک</city>
+		<city>قشم</city>
+		<city>میناب</city>
+		<city>گاوبندی</city>
+	</state>
+	<state name="همدان">
+		<city>اسدآباد</city>
+		<city>بهار</city>
+		<city>تویسرکان</city>
+		<city>رزن</city>
+		<city>شیرین سو</city>
+		<city>فامنین</city>
+		<city>ملایر</city>
+		<city>نهاوند</city>
+		<city>همدان</city>
+		<city>کبودرآهنگ</city>
+	</state>
+	<state name="چهارمحال و بختیاری">
+		<city>اردل</city>
+		<city>بروجن</city>
+		<city>سامان</city>
+		<city>شهرکرد</city>
+		<city>فارسان</city>
+		<city>لردگان</city>
+		<city>کوهرنگ</city>
+		<city>کیار</city>
+	</state>
+	<state name="کردستان">
+		<city>بانه</city>
+		<city>بیجار</city>
+		<city>دهگلان</city>
+		<city>دیوان دره</city>
+		<city>سروآباد</city>
+		<city>سقز</city>
+		<city>سنندج</city>
+		<city>قروه</city>
+		<city>مریوان</city>
+		<city>کامیاران</city>
+	</state>
+	<state name="کرمان">
+		<city>انار</city>
+		<city>بافت</city>
+		<city>بردسیر</city>
+		<city>بم</city>
+		<city>جیرفت</city>
+		<city>رابر</city>
+		<city>راور</city>
+		<city>رفسنجان</city>
+		<city>رودبار</city>
+		<city>ریگان</city>
+		<city>زرند</city>
+		<city>سیرجان</city>
+		<city>شهر بابک</city>
+		<city>عنبرآباد</city>
+		<city>فهرج</city>
+		<city>قلعه گنج</city>
+		<city>منوجان</city>
+		<city>کرمان</city>
+		<city>کهنوج</city>
+		<city>کوهبنان</city>
+	</state>
+	<state name="کرمانشاه">
+		<city>اسلام آباد غرب</city>
+		<city>ثلاث</city>
+		<city>جوانرود</city>
+		<city>دالاهو</city>
+		<city>روانسر</city>
+		<city>سرپل ذهاب</city>
+		<city>سنقر</city>
+		<city>صحنه</city>
+		<city>قصر شیرین</city>
+		<city>هرسین</city>
+		<city>پاوه</city>
+		<city>کرمانشاه</city>
+		<city>کنگاور</city>
+		<city>گیلان غرب</city>
+	</state>
+	<state name="کهگیلویه و بویر احمد">
+		<city>باشت</city>
+		<city>بهمیی</city>
+		<city>بویراحمد</city>
+		<city>دنا</city>
+		<city>لنده</city>
+		<city>چرام</city>
+		<city>کهگیلویه</city>
+		<city>گچساران</city>
+	</state>
+	<state name="گلستان">
+		<city>آزادشهر</city>
+		<city>آق قلا</city>
+		<city>بندر گز</city>
+		<city>ترکمن</city>
+		<city>رامیان</city>
+		<city>علی آباد</city>
+		<city>مراوه تپه</city>
+		<city>مینودشت</city>
+		<city>کردکوی</city>
+		<city>کلاله</city>
+		<city>گرگان</city>
+		<city>گمیشان</city>
+		<city>گنبد کاووس</city>
+	</state>
+	<state name="گیلان">
+		<city>آستارا</city>
+		<city>آستانه اشرفیه</city>
+		<city>املش</city>
+		<city>بندر انزلی</city>
+		<city>تالش</city>
+		<city>رشت</city>
+		<city>رضوانشهر</city>
+		<city>رودسر</city>
+		<city>سیاهک و رودبار</city>
+		<city>شفت</city>
+		<city>صومعه سرا</city>
+		<city>فومن</city>
+		<city>لاهیجان</city>
+		<city>لنگرود</city>
+		<city>ماسال</city>
+	</state>
+	<state name="یزد">
+		<city>ابرکوه</city>
+		<city>اردکان</city>
+		<city>بافق</city>
+		<city>بهاباد</city>
+		<city>تفت</city>
+		<city>خاتم</city>
+		<city>صدوق</city>
+		<city>مهریز</city>
+		<city>میبد</city>
+		<city>یزد</city>
+	</state>
+</country>

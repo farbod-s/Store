@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="0dp"
+    android:layout_marginTop="12dp">
+
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.0dip"
+        android:id="@+id/shipping_address_item_check_layout">
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/shipping_address_item_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <RadioButton
+                android:id="@+id/chk_btn"
+                android:padding="0.0dip"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16.0dip"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="15.0sp"
+                android:text="فربد صمصامی پور"
+                android:textColor="@color/primary_text"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:gravity="right"
+                android:id="@+id/order_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_toLeftOf="@+id/chk_btn"
+                android:layout_toRightOf="@+id/address_delete"
+                android:layout_alignBaseline="@+id/chk_btn" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/link_text"
+                android:text="حذف"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:id="@+id/address_delete"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/below_chk_btn_line"
+            android:layout_marginBottom="4dp"
+            android:background="#ccc"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/shipping_address_item_header_view" />
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="right"
+            android:id="@+id/province_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:text="استان"
+            android:layout_below="@+id/below_chk_btn_line"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:text="xxx"
+            android:textSize="14.0sp"
+            android:textColor="@color/primary_text"
+            android:gravity="right"
+            android:id="@+id/province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@+id/province_title"
+            android:layout_below="@+id/below_chk_btn_line" />
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="right"
+            android:id="@+id/city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:text="شهر"
+            android:layout_toLeftOf="@+id/province"
+            android:layout_below="@+id/below_chk_btn_line" />
+
+        <TextView
+            android:text="xxxx"
+            android:textSize="14.0sp"
+            android:textColor="@color/primary_text"
+            android:gravity="right"
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@+id/city_title"
+            android:layout_below="@+id/below_chk_btn_line" />
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="right"
+            android:id="@+id/order_delivery_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:text="آدرس"
+            android:layout_below="@+id/city_title"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:text="xxx"
+            android:textSize="14.0sp"
+            android:textColor="@color/primary_text"
+            android:gravity="right"
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_below="@+id/city_title"
+            android:layout_toLeftOf="@+id/order_delivery_address_title" />
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="right"
+            android:id="@+id/postalCode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:text="کدپستی"
+            android:layout_below="@+id/address"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:text="xxxx"
+            android:textSize="14.0sp"
+            android:textColor="@color/primary_text"
+            android:gravity="right"
+            android:id="@+id/postalCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@+id/postalCode_title"
+            android:layout_below="@+id/address" />
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="right"
+            android:id="@+id/emergencyPhone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:text="شماره تماس اضطراری"
+            android:layout_below="@+id/postalCode_title"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:text="xxx"
+            android:textSize="14.0sp"
+            android:textColor="@color/primary_text"
+            android:gravity="right"
+            android:id="@+id/emergencyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@+id/emergencyPhone_title"
+            android:layout_below="@+id/postalCode_title" />
+
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="right"
+            android:id="@+id/phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:text="شماره تماس ثابت"
+            android:layout_below="@+id/emergencyPhone_title"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:text="xxx"
+            android:textSize="14.0sp"
+            android:textColor="@color/primary_text"
+            android:gravity="right"
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@+id/phone_title"
+            android:layout_below="@+id/emergencyPhone_title" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

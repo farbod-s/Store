@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/material_drawer_item_primary"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/material_drawer_vertical_padding"
+    android:paddingRight="@dimen/material_drawer_vertical_padding">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/material_drawer_item_primary_width"
+        android:layout_height="@dimen/material_drawer_item_primary"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/material_drawer_item_primary_icon_margin_right"
+        android:paddingBottom="@dimen/material_drawer_item_primary_icon_padding"
+        android:paddingTop="@dimen/material_drawer_item_primary_icon_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/toggle"
+        android:layout_toLeftOf="@id/icon"
+        android:gravity="center_vertical|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:gravity="center_vertical|right"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/material_drawer_item_primary_text"
+            tools:text="Some drawer text" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/material_drawer_item_primary_description"
+            tools:text="Some drawer text" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|end"
+        android:textSize="@dimen/material_drawer_item_primary_text" />
+</RelativeLayout>

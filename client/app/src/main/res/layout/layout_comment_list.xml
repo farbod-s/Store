@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/comment_section_title"
+                android:padding="12dp"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:text="@string/review_section_title"
+                android:textColor="@color/secondary_text"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/comment_show_more_link"
+                android:visibility="gone"
+                android:textColor="@color/link_text"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:text="@string/review_more_link_text"
+                android:layout_alignParentLeft="true"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ccc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/comment_empty_message"
+                android:visibility="gone"
+                android:padding="16dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:textColor="@color/hint_text"
+                android:text="@string/review_empty_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.shopping.app.ui.widget.ExpandableHeightListView
+                android:visibility="gone"
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Loading progress -->
+            <ProgressBar android:id="@+id/comment_load_progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:background="@color/md_red_50"
+                android:padding="16dp"
+                android:id="@+id/comment_load_error_layout"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/comment_load_error_desc"
+                    android:drawableRight="@mipmap/ic_problem"
+                    android:drawablePadding="8dp"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal"
+                    android:text="@string/network_error"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:textColor="@color/secondary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button android:id="@+id/comment_load_retry_button"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:text="@string/button_retry"
+                    android:padding="0dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@color/md_grey_500"
+                    android:textAppearance="@style/TextAppearance.Bold"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ccc" />
+
+        <!-- comment input layout -->
+
+        <RelativeLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/write_comment_button"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:textSize="12sp"
+                android:text="ارسال"
+                android:gravity="center"
+                android:textColor="@color/md_white_1000"
+                android:background="@color/md_grey_500"
+                android:textAppearance="@style/TextAppearance.Bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="12dp"
+                android:layout_centerVertical="true"
+                android:layout_width="65dp"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:id="@+id/write_comment_text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@color/md_grey_300"
+                android:inputType="text"
+                android:hint="نظر بنویسید..."
+                android:textSize="14sp"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="@color/primary_text"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/write_comment_button"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_height="35dp" />
+
+        </RelativeLayout>
+
+        <!--/ comment input layout /-->
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

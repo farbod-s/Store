@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">فروشگاه</string>
+    <string name="activity_inbox_title">خبرهای تازه</string>
+    <string name="activity_product_list_title">محصولات</string>
+    <string name="activity_product_title">محصول</string>
+    <string name="activity_shopping_cart_title">سبد خرید</string>
+    <string name="activity_search_title">جستجو</string>
+    <string name="activity_review_title">نظرات</string>
+    <string name="activity_shopping_cart_review">تایید سفارش</string>
+    <string name="activity_shipping_address">آدرس تحویل</string>
+    <string name="activity_orders_title">سفارشات</string>
+    <string name="activity_order_title">سفارش</string>
+
+    <string name="product_description_section_title">توضیحات</string>
+    <string name="product_more_description_link_text">توضیحات تکمیلی</string>
+    <string name="review_section_title">نظرات</string>
+    <string name="review_more_link_text">مشاهده همه</string>
+    <string name="review_empty_message">اولین نفری باشید که نظر می دهد</string>
+    <string name="related_products_section_title">محصولات مشابه</string>
+    <string name="related_product_empty_message">محصولی یافت نشد</string>
+
+    <string name="empty"></string>
+    <string name="delimiter">،</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="network_error">خطا در دریافت اطلاعات</string>
+    <string name="button_retry">تلاش مجدد</string>
+    <string name="coupon_error">کد تخفیف معتبر نمی باشد</string>
+
+    <string name="view_profile_text">مشاهده حساب کاربری</string>
+    <string name="login_profile_text">ورود به حساب کاربری</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_shop">فروشگاه</string>
+    <string name="drawer_item_inbox">چه خبرا؟</string>
+    <string name="drawer_item_picks">مورد پسندها</string>
+    <string name="drawer_item_shopping_cart">سبد خرید</string>
+    <string name="drawer_item_gift_cards">کارت هدیه</string>
+    <string name="drawer_item_notification">اعلان ها</string>
+    <string name="drawer_item_invite_friends">دعوت دوستان</string>
+    <string name="drawer_item_find_friends">یافتن دوستان</string>
+    <string name="drawer_item_settings">تنظیمات</string>
+    <string name="drawer_item_online_support">پشتیبانی</string>
+    <string name="drawer_item_about_us">درباره ما</string>
+    <string name="drawer_item_account_settings">مدیریت حساب کاربری</string>
+
+    <string name="profile_name">کاربر میهمان</string>
+    <string name="profile_email"></string>
+    <string name="profile_icon"></string>
+
+    <string name="currency">تومان</string>
+    <string name="banner_title">همین حالا خرید کنید</string>
+    <string name="banner_title_2">خرید مطمئن را تجربه کنید</string>
+    <string name="special_offer_title">پیشنهادات ویژه</string>
+    <string name="most_sales_title">پرفروش ترین ها</string>
+    <string name="recent_collection_tiltle">مجموعه های تازه</string>
+    <string name="more_text">بیشتر</string>
+    <string name="more_feed">ادامه مطلب</string>
+    <string name="datetime">نوشته شده در تاریخ:</string>
+
+    <string-array name="shop_tabs_title_list">
+        <item>مجموعه ها</item>
+        <item>محبوب ها</item>
+        <item>دسته بندی ها</item>
+        <item>خانه</item>
+    </string-array>
+
+    <string-array name="items_title_array">
+        <item>مردانه</item>
+        <item>زنانه</item>
+        <item>ساعت مچی</item>
+        <item>دستبند</item>
+        <item>انگشتر</item>
+        <item>گردنبند</item>
+        <item>گوشواره</item>
+        <item>کیف</item>
+        <item>کفش</item>
+        <item>کلاه</item>
+        <item>دستکش</item>
+        <item>آرایش و بهداشتی</item>
+        <item>عینک آفتابی</item>
+        <item>سوییت شرت</item>
+        <item>تی شرت</item>
+        <item>کت و پالتو</item>
+    </string-array>
+
+    <string-array name="items_image_array">
+        <item>http://thefancy-media-ec1.thefancy.com/310/20140121/544799745722286376_c1f2b01d73e8.jpg</item>
+        <item>http://thefancy-media-ec3.thefancy.com/310/20131009/468908433777628199_a07ecf02ff56.jpg</item>
+        <item>http://thefancy-media-ec2.thefancy.com/310/20130131/287441392966311359_26a3b8693f9b.jpg</item>
+        <item>http://thefancy-media-ec4.thefancy.com/310/20120714/141963691208743723_f3a65ec5302d.jpeg</item>
+        <item>http://thefancy-media-ec1.thefancy.com/310/20140408/600644631603976146_4cd6c996ae36.jpg</item>
+        <item>http://thefancy-media-ec5.thefancy.com/310/20130702/397603497341623817_7508330d3c0b.jpg</item>
+        <item>http://thefancy-media-ec2.thefancy.com/310/20130827/437982370499403167_d6e50f31032a.jpg</item>
+        <item>http://thefancy-media-ec6.thefancy.com/310/20130102/265855264790420549_4d015371ac50.jpeg</item>
+        <item>http://thefancy-media-ec6.thefancy.com/310/20130827/437871238883318025_75c34534ed82.png</item>
+        <item>http://thefancy-media-ec1.thefancy.com/310/20140313/581663216996720107_96aaf5edb015.jpg</item>
+        <item>http://thefancy-media-ec3.thefancy.com/310/20150205/819948483791292785_a58cb12117d4.jpg</item>
+        <item>http://thefancy-media-ec1.thefancy.com/310/20130125/283127283680549833_2a34d282f9fa.jpg</item>
+        <item>http://thefancy-media-ec1.thefancy.com/310/20140104/532339533690177496_8e97dfbc982b.jpg</item>
+        <item>http://thefancy-media-ec1.thefancy.com/310/20141222/787626595367001263_003589af5778.jpg</item>
+        <item>http://thefancy-media-ec2.thefancy.com/310/20150331/859329017512201842_304fccaa17a7.jpg</item>
+        <item>http://thefancy-media-ec5.thefancy.com/310/20131207/512223271031152216_db9a1dc7109c.jpg</item>
+    </string-array>
+
+    <string-array name="products_title_array">
+        <item>ادو پرفیوم زنانه Kenzo Madly Oud حجم 80ml</item>
+        <item>کرم پودر مخملی مات BeYu مدل 18</item>
+        <item>ریمل حجم دهنده BeYu مدل Magic Eyes Volume</item>
+        <item>رژ گونه BeYu مدل Catwalk 48</item>
+        <item>سشوار رمینگتون D3010</item>
+        <item>لاک ناخن ANNY</item>
+        <item>ادو پرفیوم مردانه Ferrari Leather Essence حجم 100ml</item>
+        <item>لاک ناخن Catrice</item>
+        <item>ادو تویلت زنانه Dior Hypnotic Poison حجم 100ml</item>
+        <item>ژل شستشوی صورت آقایان Cinere</item>
+        <item>کرم ضد آفتاب روشن کننده و ضد چروک</item>
+        <item>لوسیون بدن Schon مدل Coffee</item>
+        <item>شامپو ضد شوره 2 در 1 Clear</item>
+        <item>رژ لب جامد BeYu مدل 200 Pure Color and Stay</item>
+        <item>اپیلاتور فیلیپس HP6420</item>
+        <item>ماشین اصلاح صورت فیلیپس PT723/16</item>
+    </string-array>
+
+    <string-array name="products_image_array">
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_54962/Original/Perfume-Kenzo-Madly-Oud-Eau-De-Perfume-80-ml157aca.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_78689/Original/Foundation-BeYu-Valvet-Mat-1801d33b.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_77836/Original/Mascara-BeYu-Magic-Eyes-Volumec42322.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_78526/Original/Blush-BeYu-Catwalk-48c21630.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_18152/Original/Hair-Dryer-Remington-D3010d6e058.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_79236/Original/Nail-Polish-ANNY-7343d1f31.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_55509/Original/Perfume-Ferrari-Leather-Essence-Eau-De-Parfum-For-Men-100ml335ee7.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_79050/Original/Nail-Polish-Catrice-Luxury-Nuds-03c086cb.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_55737/Original/Perfume-Dior-Hypnotic-Poison-EDT-100-mlc2bddc.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_79792/Original/Liquid-Syndet-Cinere-Face-Wash-For-Men-150mla22557.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_82028/Original/Sunscreen-Cream-Whitening-and-Anti-Wrinkle-SPF35bb678d.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_81359/Original/Body-Cream-Schon-Coffee-200ml3b2d93.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_80492/Original/Hair-Shampoo-Clear-For-Men-Style-Express-2-in-1-400ml6a35d6.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_80568/Original/Eyebrow-Shadow-BeYu-Catwalk-Star-Powder324281.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_78088/Original/Lipstick-BeYu-Pure-Color-and-Stay-200113ead.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_20415/Original/Hair-Clipper-Philips-HP6420a8bf96.jpg</item>
+    </string-array>
+
+    <string-array name="categories_title_array">
+        <item>زنانه</item>
+        <item>مردانه</item>
+        <item>ساعت مچی</item>
+        <item>عینک آفتابی</item>
+        <item>سرویس</item>
+        <item>نیم ست</item>
+        <item>دستبند</item>
+        <item>انگشتر</item>
+        <item>گردنبند</item>
+        <item>گوشواره</item>
+        <item>عطر و ادکلن</item>
+        <item>اصلاح صورت و بدن</item>
+        <item>دهان و دندان</item>
+        <item>زیبایی ناخن</item>
+        <item>آرایش صورت</item>
+        <item>آرایش مو</item>
+    </string-array>
+
+    <string-array name="categories_image_array">
+        <item>http://img.shixon.com/zoom/Sh1777_1.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1135_3.jpg</item>
+        <item>http://thefancy-media-ec2.thefancy.com/310/20130131/287441392966311359_26a3b8693f9b.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1077_4.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1150_4.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1165_4.jpg</item>
+        <item>http://thefancy-media-ec4.thefancy.com/310/20120714/141963691208743723_f3a65ec5302d.jpeg</item>
+        <item>http://thefancy-media-ec1.thefancy.com/310/20140408/600644631603976146_4cd6c996ae36.jpg</item>
+        <item>http://thefancy-media-ec5.thefancy.com/310/20130702/397603497341623817_7508330d3c0b.jpg</item>
+        <item>http://thefancy-media-ec2.thefancy.com/310/20130827/437982370499403167_d6e50f31032a.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1006_3.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_18227/Original/Shaver-Remington-PG-6050d2d0a5.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_33873/Original/Electric-Brusher-Oral-B-Professional-Care-Oxyjet-And-3000fd8373.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_81711/Original/Nail-Care-Manicure-Jewel-GSM-8090efa2c.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_78526/Original/Blush-BeYu-Catwalk-48c21630.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_20423/Original/Hair-Clipper-Philips-HP8698311f0d.jpg</item>
+    </string-array>
+
+    <string-array name="collections_title_array">
+        <item>ساعت مچی از 200 هزار تومان</item>
+        <item>سرویس کامل مخصوص نامزدی</item>
+        <item>عینک آفتابی های کپی ریبن</item>
+        <item>نیم ست زیر 50 هزار تومان</item>
+    </string-array>
+
+    <string-array name="collections_image_array">
+        <item>http://thefancy-media-ec2.thefancy.com/310/20130131/287441392966311359_26a3b8693f9b.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_25994/Original/Watch-Analog-Candino-C4486265e19e.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_34341/Original/Watch-Seiko-SNAE95P17b1330.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_34458/Original/Watch-Pierre-Cardian-PC105901S034c02b5.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_65379/Original/Watch-Casio-G-SHock-GWM-1000-2ADRc38b6a.jpg</item>
+
+        <item>http://img.shixon.com/zoom/Sh1150_4.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1015_5.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1150_2.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1163_5.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1108_2.jpg</item>
+
+        <item>http://img.shixon.com/zoom/Sh1077_4.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1085_1.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1092_1.jpg</item>
+        <item>http://img.shixon.com/zoom/sh1252_4.jpg</item>
+        <item>http://img.shixon.com/zoom/Sh1207_4.jpg</item>
+
+        <item>http://img.shixon.com/zoom/Sh1165_4.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_66882/Original/Half-Set-JWL-SET-559-10df1ba.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_67042/Original/Half-Set-JWL-SET-573cf10dd.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_77213/Original/Half-Set-ROXI-JS-022c0b38.jpg</item>
+        <item>http://2.187.253.36/Digikala/Image/Webstore/Product/P_66778/Original/Half-Set-JWL-SET-558e13eec.jpg</item>
+    </string-array>
+
+
+
+    <string name="dummy_text_paragraph_1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</string>
+    <string name="dummy_text_paragraph_2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</string>
+    <string name="dummy_text_description_long">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</string>
+    <string name="dummy_text_description_short">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</string>
+    <string name="dummy_text_title">لورم ایپسوم</string>
+    <string name="dummy_text_datetime">1370/10/24 - 09:43</string>
+
+</resources>

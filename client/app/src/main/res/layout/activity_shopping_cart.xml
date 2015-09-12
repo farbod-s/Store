@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/scroll_view_content"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="false"
+                card_view:contentPadding="0dp"
+                android:layout_margin="0dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="12dp"
+                        android:textAppearance="@style/TextAppearance.Bold"
+                        android:text="سفارشات"
+                        android:textColor="@color/secondary_text"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ccc" />
+
+                    <com.example.shopping.app.ui.widget.ExpandableHeightListView
+                        android:visibility="visible"
+                        android:id="@+id/items"
+                        android:dividerHeight="0dp"
+                        android:divider="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ccc" />
+
+                    <!-- Coupon -->
+                    <LinearLayout
+                        android:id="@+id/add_coupon_layout"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_add" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="کوپن تخفیف"
+                            android:gravity="right"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:textColor="@color/md_grey_800"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+                    <!--/ Coupon /-->
+
+                    <!-- Gift -->
+                    <View
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ccc" />
+
+                    <LinearLayout
+                        android:id="@+id/add_gift_note_layout"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:checked="false"
+                            android:id="@+id/gift_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="سفارش هدیه"
+                            android:gravity="right"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:textSize="14sp"
+                            android:textColor="@color/md_grey_800"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/gift_note_text"
+                        android:visibility="gone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:background="@color/md_grey_300"
+                        android:inputType="text"
+                        android:hint="متن دلخواه برای کارت هدیه ..."
+                        android:textSize="14sp"
+                        android:textColorHint="@color/hint_text"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/primary_text"
+                        android:paddingRight="12dp"
+                        android:paddingLeft="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+                    <!--/ Gift /-->
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="false"
+                card_view:contentPadding="0dp"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="12dp"
+                        android:textAppearance="@style/TextAppearance.Bold"
+                        android:text="صورتحساب"
+                        android:textColor="@color/secondary_text"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ccc" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@color/md_grey_100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="14sp"
+                                android:text="هزینه محصولات"
+                                android:textColor="@color/secondary_text"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cart_subtotal_price"
+                                android:textSize="14sp"
+                                android:text="0 تومان"
+                                android:textColor="@color/secondary_text"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/cart_discount_layout"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="14sp"
+                                android:text="تخفیف"
+                                android:textColor="@color/md_red_800"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cart_discount_price"
+                                android:textSize="14sp"
+                                android:text="0 تومان"
+                                android:textColor="@color/md_red_800"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="14sp"
+                                android:text="هزینه حمل و نقل"
+                                android:textColor="@color/secondary_text"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cart_shipping_price"
+                                android:textSize="14sp"
+                                android:text="0 تومان"
+                                android:textColor="@color/secondary_text"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="14sp"
+                                android:text="مالیات"
+                                android:textColor="@color/secondary_text"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cart_tax_price"
+                                android:textSize="14sp"
+                                android:text="0 تومان"
+                                android:textColor="@color/secondary_text"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#ccc" />
+
+                        <RelativeLayout
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="16sp"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="هزینه کل سفارش"
+                                android:textColor="@color/primary_text"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/cart_total_price"
+                                android:textSize="16sp"
+                                android:textAppearance="@style/TextAppearance.Bold"
+                                android:text="0 تومان"
+                                android:textColor="@color/primary_text"
+                                android:layout_alignParentLeft="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/cart_note_text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:background="@color/md_grey_300"
+                            android:inputType="text"
+                            android:hint="توضیحات دلخواه..."
+                            android:textSize="14sp"
+                            android:textColorHint="@color/hint_text"
+                            android:gravity="right|center_vertical"
+                            android:textColor="@color/primary_text"
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#ccc" />
+
+                    <Button
+                        android:id="@+id/cart_checkout_button"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textSize="16sp"
+                        android:textAppearance="@style/TextAppearance.Bold"
+                        android:background="@color/green"
+                        android:textColor="@color/md_white_1000"
+                        android:text="نهایی کردن سفارش"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

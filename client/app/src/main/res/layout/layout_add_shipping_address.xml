@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/shipping_address_header_view"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/primary_text"
+        android:textAppearance="@style/TextAppearance.Bold"
+        android:gravity="right|center_vertical"
+        android:text="افزودن آدرس جدید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_below="@+id/shipping_address_header_view"
+        android:background="#ccc"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip" />
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:id="@+id/shipping_address_scroll"
+        android:layout_below="@+id/line_top"
+        android:layout_above="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/name_text"
+                android:background="@color/md_grey_300"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="نام"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textPersonName|textCapWords"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/family_text"
+                android:background="@color/md_grey_300"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="نام خانوادگی"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textPersonName|textCapWords"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/city_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/state_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/postalAddress_text"
+                android:background="@color/md_grey_300"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="آدرس کامل"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textPostalAddress"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/postalCode_text"
+                android:background="@color/md_grey_300"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="کد پستی"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/emergencyPhone_text"
+                android:background="@color/md_grey_300"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="تلفن همراه"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/phone_text"
+                android:background="@color/md_grey_300"
+                android:textColorHint="@color/hint_text"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="تلفن ثابت"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/line_bottom"
+        android:layout_above="@+id/shipping_address_footer_layout"
+        android:background="#ccc"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip" />
+
+    <LinearLayout
+        android:id="@+id/shipping_address_footer_layout"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/save_button"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:textSize="14sp"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:background="@color/transparent"
+            android:textColor="@color/primary_text"
+            android:text="ذخیره"
+            android:layout_width="65dp"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:textSize="14sp"
+            android:textAppearance="@style/TextAppearance.Bold"
+            android:background="@color/transparent"
+            android:textColor="@color/primary_text"
+            android:text="بیخیال"
+            android:layout_width="65dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
